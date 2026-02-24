@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Board of Trustees | Aura Thread Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4af35",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#201d12",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            animation: marquee 25s linear infinite;
+        }
+        .member-card:hover .bio-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-primary/30">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-12 lg:px-24">
+<div class="mx-auto flex h-20 max-w-7xl items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="h-8 w-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h1 class="text-xl font-extrabold tracking-tighter text-slate-900 dark:text-slate-100 uppercase">Aura Thread <span class="text-primary font-light">Atelier</span></h1>
+</div>
+<nav class="hidden lg:flex items-center gap-10">
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">Collections</a>
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">Atelier</a>
+<a class="text-sm font-bold tracking-widest uppercase text-primary" href="#">Board</a>
+<a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-900 dark:text-slate-100 hover:bg-primary/10 rounded-lg transition-all">
+<span class="material-symbols-outlined text-[22px]">person</span>
+</button>
+<button class="p-2 text-slate-900 dark:text-slate-100 hover:bg-primary/10 rounded-lg transition-all relative">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+<span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-primary"></span>
+</button>
+<button class="lg:hidden p-2 text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<main class="flex-grow">
+<section class="px-6 py-16 md:py-24 lg:px-24 max-w-7xl mx-auto">
+<div class="mb-16 max-w-3xl">
+<h2 class="text-primary text-sm font-bold uppercase tracking-[0.3em] mb-4">Leadership</h2>
+<h3 class="text-5xl md:text-7xl font-black tracking-tight mb-8 leading-[1.1]">Board of <br/><span class="text-primary/80">Trustees</span></h3>
+<p class="text-lg text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+                        Meet the visionaries guiding the minimalist luxury of Aura Thread Atelier. A collective of designers, strategists, and pioneers redefining the fabric of modern elegance.
+                    </p>
+</div>
+<!-- Trustees Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Member 1 -->
+<div class="group member-card relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer bg-slate-200 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Portrait of Julian Thorne, Creative Director in a black suit" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAn6QOBQoSa6nSvSEKM7d2VG45P_SjaFF407-_xHu_bUXFUCraM6KIP6LZ1mVViszFPJjIGMUY3zRk8n6_N2YDMGBVPqVjh3pGdsLwFZoKbxcWPVh5DRYRlweNXOeI93OPs06gbv---g_HiGCbm4qxqPHjpVxWWqkT6si-n-166Ukz-qUvLrn8pCVKc6Y0KS_PLXVS_J3wwkP6VsUyuyDwlDUR8Jm_Dg8zw4tIT0z-Eh2U-nHtmY7NXHdQUGRd1DtkNqwZoPff_bQ');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<p class="text-white text-xl font-bold mb-1">Julian Thorne</p>
+<p class="text-primary text-xs uppercase tracking-widest font-semibold">Chief Creative Officer</p>
+</div>
+<!-- Hover Bio Overlay -->
+<div class="bio-overlay absolute inset-0 flex flex-col justify-center bg-background-dark/95 p-8 opacity-0 translate-y-4 transition-all duration-500 ease-out">
+<h4 class="text-primary text-xl font-bold mb-2">Julian Thorne</h4>
+<div class="w-12 h-1 bg-primary mb-4"></div>
+<p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                With two decades in haute couture, Julian leads the artistic direction, blending heritage techniques with avant-garde minimalism.
+                            </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary/60 hover:text-primary transition-colors">share</span>
+<span class="material-symbols-outlined text-primary/60 hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+</div>
+<!-- Member 2 -->
+<div class="group member-card relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer bg-slate-200 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Portrait of Eleanor Vance, Managing Director in elegant attire" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNX_X7EgGCO7tj_CfwXHfOrDZSf45u58JLyF9ewiPfLPW9yV1_fVIrF5mk1ctoRoYgB22s_qBAJXnwAhElL8gGJu60O0T6CA6KFA-YrQh2xbNPx-ezlU5VEPMvuhKZRKU6H8lpnUkdRY4zV_utKORlcsOhGjDjzEcYmK0c8wFJbDeUIGKX45eB_1av3PQmiXKXIc8OGkcYkQ8qVimjVcUAVF28298nuWlTh5WuHQG9kWQ7QuG4wvwnm3UZlY98wiYVzS0JKaTLbw');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<p class="text-white text-xl font-bold mb-1">Eleanor Vance</p>
+<p class="text-primary text-xs uppercase tracking-widest font-semibold">Managing Director</p>
+</div>
+<div class="bio-overlay absolute inset-0 flex flex-col justify-center bg-background-dark/95 p-8 opacity-0 translate-y-4 transition-all duration-500 ease-out">
+<h4 class="text-primary text-xl font-bold mb-2">Eleanor Vance</h4>
+<div class="w-12 h-1 bg-primary mb-4"></div>
+<p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Eleanor oversees global strategy and operations, ensuring the Atelier's ethos of sustainable luxury is upheld across every collection.
+                            </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary/60 hover:text-primary transition-colors">share</span>
+<span class="material-symbols-outlined text-primary/60 hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+</div>
+<!-- Member 3 -->
+<div class="group member-card relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer bg-slate-200 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Portrait of Marcus Chen, Head of Sustainability" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTkMcNB2l2EvjILdwgFT0wSw6zrAq9BOnj48MSYaWqm6c2bymtenNs2v5T2e6zTqaxUi9vjTOxhN_Gp3MDZk-JzcY9ZqSkBhH6wq_xU2buSTV-zE5MxcUEQ1s2pJsSZXtKaBsBji1lfONMv9YS02vRSMxpGAQFqA0XxgyFUIlbCT92knJz2r9Z4lIgPTydvwvMGewmyL5TbpJ8WC0WrlmIgp4rDGH0w-5vGwiCwYio2miTuhf2QhfzlWAel4CGi7ACYsiF23nPAg');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<p class="text-white text-xl font-bold mb-1">Marcus Chen</p>
+<p class="text-primary text-xs uppercase tracking-widest font-semibold">Head of Sustainability</p>
+</div>
+<div class="bio-overlay absolute inset-0 flex flex-col justify-center bg-background-dark/95 p-8 opacity-0 translate-y-4 transition-all duration-500 ease-out">
+<h4 class="text-primary text-xl font-bold mb-2">Marcus Chen</h4>
+<div class="w-12 h-1 bg-primary mb-4"></div>
+<p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                A pioneer in ethical textiles, Marcus curates our supply chain to ensure every thread meets the highest environmental standards.
+                            </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary/60 hover:text-primary transition-colors">share</span>
+<span class="material-symbols-outlined text-primary/60 hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+</div>
+<!-- Member 4 -->
+<div class="group member-card relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer bg-slate-200 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Portrait of Sienna Marks, Lead Textiles Designer" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqkO8-cq91yFo-m-hl-2TvQfJJlkPw0ESDRmASu2H6lup2yHqanPD49G-BI6WRLJmQ4wDy4_Ov9Z8mqJPDum9HI6yBNI2xvbuu8e6OcTqXQZfroBPFQrQxJvo8ECA49D6maKobG462fHs365DUyrdl1hGsFHPK-2IkXU6sndb88CuwTwj7m5fEFuEcxQJXf2T1inkyUOmXUqJtpPUxSodBZk1CNFZ81vOSJILgHV_hjmD9qrhcJivRT4kxGUhzAQkIm8HlQ_N08Q');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<p class="text-white text-xl font-bold mb-1">Sienna Marks</p>
+<p class="text-primary text-xs uppercase tracking-widest font-semibold">Lead Textiles Designer</p>
+</div>
+<div class="bio-overlay absolute inset-0 flex flex-col justify-center bg-background-dark/95 p-8 opacity-0 translate-y-4 transition-all duration-500 ease-out">
+<h4 class="text-primary text-xl font-bold mb-2">Sienna Marks</h4>
+<div class="w-12 h-1 bg-primary mb-4"></div>
+<p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Sienna's innovative approach to fabric weight and drape defines the 'Aura' silhouette. Her work has been featured in global galleries.
+                            </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary/60 hover:text-primary transition-colors">share</span>
+<span class="material-symbols-outlined text-primary/60 hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Subtle Instruction -->
+<div class="mt-12 flex justify-center">
+<p class="text-slate-400 dark:text-slate-500 text-sm italic font-light tracking-wide flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">touch_app</span>
+                        Touch or hover to explore their journey.
+                    </p>
+</div>
+</section>
+</main>
+<!-- Marquee Footer Section -->
+<footer class="mt-auto border-t border-primary/20 bg-background-dark py-4 overflow-hidden">
+<div class="flex whitespace-nowrap overflow-hidden group">
+<div class="animate-marquee flex gap-8 py-2">
+<span class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Upcoming Events: Winter Gala March 15th</span>
+<span class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">New Arrivals in Store now!</span>
+<span class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Private Fittings Available in Paris</span>
+<span class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">Exclusive Membership Open for Summer 2024</span>
+<span class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Upcoming Events: Winter Gala March 15th</span>
+<span class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">New Arrivals in Store now!</span>
+</div>
+<!-- Duplicate for seamless loop -->
+<div aria-hidden="true" class="animate-marquee flex gap-8 py-2">
+<span class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Upcoming Events: Winter Gala March 15th</span>
+<span class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">New Arrivals in Store now!</span>
+<span class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Private Fittings Available in Paris</span>
+<span class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">Exclusive Membership Open for Summer 2024</span>
+<span class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Upcoming Events: Winter Gala March 15th</span>
+<span class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">New Arrivals in Store now!</span>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

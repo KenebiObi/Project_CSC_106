@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inquiries &amp; Appointments | Aura Thread Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4af35",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#12110d",
+                        "surface-dark": "#1e1c16",
+                        "border-dark": "#37342a",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 30s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none !important;
+            border-color: #d4af35 !important;
+            box-shadow: 0 0 0 1px #d4af35 !important;
+        }
+        /* Custom scrollbar for a luxury feel */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #12110d;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #37342a;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af35;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-300">
+<!-- Header Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+</div>
+<h1 class="text-xl font-bold tracking-[0.2em] uppercase">Aura Thread</h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Gallery</a>
+<a class="text-sm font-medium text-primary uppercase tracking-widest border-b border-primary" href="#">Appointments</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-background-dark text-xs font-bold uppercase tracking-widest hover:bg-primary/90 transition-all">
+                    Book Now
+                </button>
+<div class="size-10 rounded-full border border-border-dark overflow-hidden bg-surface-dark flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400">person</span>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Title Section -->
+<section class="py-16 px-6 max-w-7xl mx-auto text-center">
+<h2 class="text-primary text-sm font-bold tracking-[0.3em] uppercase mb-4">The Atelier Experience</h2>
+<h3 class="text-4xl md:text-6xl font-extralight tracking-tight mb-6">Bespoke Consultations</h3>
+<p class="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed">
+                Step into a world where precision meets passion. Secure your private session with our master tailors to begin your journey of sartorial excellence.
+            </p>
+</section>
+<!-- Main Content Split -->
+<section class="max-w-7xl mx-auto px-6 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Information Side -->
+<div class="lg:col-span-5 space-y-12">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 border border-border-dark relative group">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<p class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Signature Quality</p>
+<h4 class="text-2xl font-light">Elegance is not standing out, but being remembered.</h4>
+</div>
+<div class="w-full h-full bg-center bg-cover" data-alt="Close up of a tailor measuring high quality dark fabric with gold needles" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXAcPxtttIgkQC8b5t8CRgBaZ6KaqH1mpQhy0To14KsjEO_I39ZGpw39VsfYpmruBYy4WmnEcYez9P7mk5cErpVpngQn5E2eqFQxCILyaT3RDXRLdRW-tErWHWOLqIs4n5BtqqjYDBdD5doiVGXTzeVvfF4nn2-Z3yBsUy2Lnr7Ds2y9v63RZQkKJdIA2DJ4lOir4txNLkbcmCPwmQDVN645HXBoUszoOqjAnUc-xb567LJWYesHe7KkGTwPSm_WVBrJmtjQz0MQ')"></div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h5 class="text-primary text-xs font-bold uppercase tracking-widest mb-4">Location</h5>
+<p class="text-sm text-slate-400 leading-6">
+                            1224 Sartorial Avenue<br/>
+                            Luxury District<br/>
+                            London, W1S 2YF
+                        </p>
+</div>
+<div>
+<h5 class="text-primary text-xs font-bold uppercase tracking-widest mb-4">Hours</h5>
+<p class="text-sm text-slate-400 leading-6">
+                            Mon - Sat: 10:00 - 19:00<br/>
+                            Sun: By Appointment Only
+                        </p>
+</div>
+</div>
+</div>
+<!-- Form Side -->
+<div class="lg:col-span-7">
+<div class="bg-surface-dark p-8 md:p-12 rounded-xl border border-border-dark shadow-2xl">
+<form class="space-y-8" id="bookingForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-300" for="fullName">Full Name</label>
+<input class="w-full bg-background-dark border-border-dark rounded-lg px-4 py-4 text-slate-100 placeholder:text-slate-600 transition-all" id="fullName" name="fullName" placeholder="Enter your name" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-300" for="email">Email Address</label>
+<input class="w-full bg-background-dark border-border-dark rounded-lg px-4 py-4 text-slate-100 placeholder:text-slate-600 transition-all" id="email" name="email" placeholder="your@email.com" required="" type="email"/>
+<p class="text-red-500 text-[10px] uppercase tracking-wider hidden" id="emailError">Please enter a valid email address</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-300" for="service">Service Type</label>
+<select class="w-full bg-background-dark border-border-dark rounded-lg px-4 py-4 text-slate-100 appearance-none focus:ring-primary transition-all" id="service" name="service" required="">
+<option disabled="" selected="" value="">Select a service</option>
+<option value="bespoke">Bespoke Design</option>
+<option value="tailoring">Master Tailoring</option>
+<option value="alterations">Premium Alterations</option>
+<option value="consultation">Style Consultation</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-300" for="date">Preferred Date</label>
+<input class="w-full bg-background-dark border-border-dark rounded-lg px-4 py-4 text-slate-100 transition-all" id="date" name="date" required="" type="date"/>
+<p class="text-red-500 text-[10px] uppercase tracking-wider hidden" id="dateError">Please select a future date</p>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-300" for="message">Special Requirements</label>
+<textarea class="w-full bg-background-dark border-border-dark rounded-lg px-4 py-4 text-slate-100 placeholder:text-slate-600 transition-all resize-none" id="message" name="message" placeholder="Tell us about your garment needs..." rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary text-background-dark font-bold uppercase tracking-[0.2em] py-5 rounded-lg hover:bg-primary/90 transition-all flex items-center justify-center gap-3" type="submit">
+<span class="material-symbols-outlined text-xl">calendar_month</span>
+                                Request Appointment
+                            </button>
+<p class="text-[10px] text-center text-slate-500 mt-6 uppercase tracking-[0.1em]">
+                                Our team will confirm your session within 24 business hours.
+                            </p>
+</div>
+</form>
+<!-- Success State (Hidden by default) -->
+<div class="hidden text-center py-12 space-y-6" id="successState">
+<div class="size-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">check_circle</span>
+</div>
+<h4 class="text-3xl font-light">Inquiry Received</h4>
+<p class="text-slate-400 max-w-sm mx-auto font-light">Thank you for choosing Aura Thread. One of our master tailors will reach out to you shortly.</p>
+<button class="text-primary text-xs font-bold uppercase tracking-widest hover:underline" onclick="window.location.reload()">Send another request</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Marquee Announcement Footer -->
+<footer class="w-full border-t border-border-dark bg-background-dark overflow-hidden py-4">
+<div class="relative flex overflow-x-hidden">
+<div class="animate-marquee whitespace-nowrap">
+<span class="text-primary/80 mx-8 uppercase tracking-[0.3em] text-xs font-medium">Upcoming Events: Winter Gala March 15th</span>
+<span class="text-slate-500 mx-8">|</span>
+<span class="text-primary/80 mx-8 uppercase tracking-[0.3em] text-xs font-medium">New Arrivals in Store now!</span>
+<span class="text-slate-500 mx-8">|</span>
+<span class="text-primary/80 mx-8 uppercase tracking-[0.3em] text-xs font-medium">Exclusive Italian Silks Just Arrived</span>
+<span class="text-slate-500 mx-8">|</span>
+<span class="text-primary/80 mx-8 uppercase tracking-[0.3em] text-xs font-medium">Book Your Spring Consultation</span>
+<span class="text-slate-500 mx-8">|</span>
+</div>
+<div aria-hidden="true" class="absolute top-0 animate-marquee whitespace-nowrap">
+<span class="text-primary/80 mx-8 uppercase tracking-[0.3em] text-xs font-medium">Upcoming Events: Winter Gala March 15th</span>
+<span class="text-slate-500 mx-8">|</span>
+<span class="text-primary/80 mx-8 uppercase tracking-[0.3em] text-xs font-medium">New Arrivals in Store now!</span>
+<span class="text-slate-500 mx-8">|</span>
+<span class="text-primary/80 mx-8 uppercase tracking-[0.3em] text-xs font-medium">Exclusive Italian Silks Just Arrived</span>
+<span class="text-slate-500 mx-8">|</span>
+<span class="text-primary/80 mx-8 uppercase tracking-[0.3em] text-xs font-medium">Book Your Spring Consultation</span>
+<span class="text-slate-500 mx-8">|</span>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-8 pb-4 flex flex-col md:flex-row justify-between items-center gap-4 opacity-40">
+<p class="text-[10px] uppercase tracking-widest">© 2024 Aura Thread Atelier. All Rights Reserved.</p>
+<div class="flex gap-6">
+<a class="text-[10px] uppercase tracking-widest hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-[10px] uppercase tracking-widest hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const emailInput = document.getElementById('email');
+            const dateInput = document.getElementById('date');
+            const emailError = document.getElementById('emailError');
+            const dateError = document.getElementById('dateError');
+            
+            let isValid = true;
+
+            // Email Validation (contains @)
+            if (!emailInput.value.includes('@')) {
+                emailError.classList.remove('hidden');
+                emailInput.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                emailError.classList.add('hidden');
+                emailInput.classList.remove('border-red-500');
+            }
+
+            // Date Validation (not in past)
+            const selectedDate = new Date(dateInput.value);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            if (selectedDate < today) {
+                dateError.classList.remove('hidden');
+                dateInput.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                dateError.classList.add('hidden');
+                dateInput.classList.remove('border-red-500');
+            }
+
+            if (isValid) {
+                // Success logic
+                document.getElementById('bookingForm').classList.add('hidden');
+                document.getElementById('successState').classList.remove('hidden');
+            }
+        });
+
+        // Set min date for the date picker to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').setAttribute('min', today);
+    </script>
+</body></html>
