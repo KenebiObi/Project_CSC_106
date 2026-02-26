@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Upcoming Events | Aura Thread Atelier</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Upcoming Events | Aura Thread Atelier</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -31,16 +38,23 @@
             },
         }
     </script>
-<style>
+    <style>
         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
+
         .animate-marquee {
             display: flex;
             width: fit-content;
             animation: marquee 30s linear infinite;
         }
+
         .glass-effect {
             background: rgba(32, 29, 18, 0.6);
             backdrop-filter: blur(12px);
@@ -48,168 +62,215 @@
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-background-dark">
-<!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 w-full border-b border-primary/10 glass-effect">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="text-primary">
-<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 48 48">
-<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
-</svg>
-</div>
-<h1 class="text-xl font-bold tracking-tight uppercase">Aura Thread <span class="font-light">Atelier</span></h1>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-medium tracking-wide hover:text-primary transition-colors" href="#">Collections</a>
-<a class="text-sm font-medium tracking-wide text-primary" href="#">Events</a>
-<a class="text-sm font-medium tracking-wide hover:text-primary transition-colors" href="#">Book Appointment</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="hidden sm:flex h-10 px-6 items-center justify-center rounded bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-widest hover:bg-primary/20 transition-all">
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-background-dark">
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 w-full border-b border-primary/10 glass-effect">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="text-primary">
+                    <svg class="w-8 h-8" fill="currentColor" viewbox="0 0 48 48">
+                        <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h1 class="text-xl font-bold tracking-tight uppercase">Aura Thread <span
+                        class="font-light">Atelier</span></h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-medium tracking-wide hover:text-primary transition-colors"
+                    href="#">Collections</a>
+                <a class="text-sm font-medium tracking-wide text-primary" href="#">Events</a>
+                <a class="text-sm font-medium tracking-wide hover:text-primary transition-colors" href="#">Book
+                    Appointment</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden sm:flex h-10 px-6 items-center justify-center rounded bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-widest hover:bg-primary/20 transition-all">
                     Login
                 </button>
-<div class="w-10 h-10 rounded-full border border-primary/30 bg-cover bg-center" data-alt="Portrait of a stylist in a studio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtgpxNTLldHBkQE2kYowh6VhI-2-LSnMP3N0zc2xfeVLR2YJbQDrgHnEFbI1BAh9zrwGFTuMZUrkbPnt3HuZ2OU6ytJ9p_hd-37bHwJB2W_jbbDiyy39yEIVzfMEWpF4heTT0PMPlrtGocGrX6mbrPiPxIpMKjsIaeRKovt11PirvOibutEXyzT67q7pb1f-UtHadxKOOgCh2bY2COO0rJBo5Wl99pxS-GYFchk5HvLVHw25aTWK144nxQhf1t5YtQBVzVyRpP1g')"></div>
-</div>
-</div>
-</header>
-<main class="pb-32">
-<!-- Hero Section with Countdown -->
-<section class="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center scale-105" data-alt="Atmospheric fashion runway with soft lighting" style="background-image: linear-gradient(rgba(32, 29, 18, 0.7), rgba(32, 29, 18, 0.9)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuACWZZR6wkX9iNb7sHXAe9EXx23x9YnnzkQm8Spt72BDs-jcFMj-uKHe8_4NXXhVklwOAiJxbaXVnyV4BNTJG2rQv7sf0X7yK5SDhrULVnzppyGAXzjbxW62mzxhVo0Q6036jTiiNdsAOvIEFNybDqoA_kT_j95aJECfvboSv8cNmn0w0pptszqFZuRiNkovs_nylOKBPmo1zPOEYa3PAbEUiBHezgV8nBOpvD8Nhyhav_GG9i4kKXSgdUkLKSaqhT-DQPHRWKQeQ')"></div>
-<div class="relative z-10 text-center px-6 max-w-4xl">
-<span class="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4 block">The Grand Unveiling</span>
-<h2 class="text-5xl md:text-7xl font-light tracking-tight mb-8">Winter Gala <span class="italic font-normal">2026</span></h2>
-<!-- Countdown Display -->
-<div class="flex flex-wrap justify-center gap-4 md:gap-8 mt-12">
-<div class="flex flex-col items-center">
-<div class="w-20 h-24 md:w-28 md:h-32 flex items-center justify-center bg-primary/5 border border-primary/20 rounded-lg">
-<span class="text-3xl md:text-5xl font-extralight text-primary" id="days">124</span>
-</div>
-<span class="mt-3 text-[10px] uppercase tracking-widest font-bold opacity-60">Days</span>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-20 h-24 md:w-28 md:h-32 flex items-center justify-center bg-primary/5 border border-primary/20 rounded-lg">
-<span class="text-3xl md:text-5xl font-extralight text-primary" id="hours">08</span>
-</div>
-<span class="mt-3 text-[10px] uppercase tracking-widest font-bold opacity-60">Hours</span>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-20 h-24 md:w-28 md:h-32 flex items-center justify-center bg-primary/5 border border-primary/20 rounded-lg">
-<span class="text-3xl md:text-5xl font-extralight text-primary" id="minutes">45</span>
-</div>
-<span class="mt-3 text-[10px] uppercase tracking-widest font-bold opacity-60">Minutes</span>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-20 h-24 md:w-28 md:h-32 flex items-center justify-center bg-primary/5 border border-primary/20 rounded-lg">
-<span class="text-3xl md:text-5xl font-extralight text-primary" id="seconds">12</span>
-</div>
-<span class="mt-3 text-[10px] uppercase tracking-widest font-bold opacity-60">Seconds</span>
-</div>
-</div>
-<div class="mt-12">
-<button class="bg-primary hover:bg-primary/90 text-background-dark font-bold py-4 px-10 rounded-full tracking-widest uppercase text-xs transition-all transform hover:scale-105">
+                <div class="w-10 h-10 rounded-full border border-primary/30 bg-cover bg-center"
+                    data-alt="Portrait of a stylist in a studio"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtgpxNTLldHBkQE2kYowh6VhI-2-LSnMP3N0zc2xfeVLR2YJbQDrgHnEFbI1BAh9zrwGFTuMZUrkbPnt3HuZ2OU6ytJ9p_hd-37bHwJB2W_jbbDiyy39yEIVzfMEWpF4heTT0PMPlrtGocGrX6mbrPiPxIpMKjsIaeRKovt11PirvOibutEXyzT67q7pb1f-UtHadxKOOgCh2bY2COO0rJBo5Wl99pxS-GYFchk5HvLVHw25aTWK144nxQhf1t5YtQBVzVyRpP1g')">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="pb-32">
+        <!-- Hero Section with Countdown -->
+        <section class="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center scale-105"
+                data-alt="Atmospheric fashion runway with soft lighting"
+                style="background-image: linear-gradient(rgba(32, 29, 18, 0.7), rgba(32, 29, 18, 0.9)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuACWZZR6wkX9iNb7sHXAe9EXx23x9YnnzkQm8Spt72BDs-jcFMj-uKHe8_4NXXhVklwOAiJxbaXVnyV4BNTJG2rQv7sf0X7yK5SDhrULVnzppyGAXzjbxW62mzxhVo0Q6036jTiiNdsAOvIEFNybDqoA_kT_j95aJECfvboSv8cNmn0w0pptszqFZuRiNkovs_nylOKBPmo1zPOEYa3PAbEUiBHezgV8nBOpvD8Nhyhav_GG9i4kKXSgdUkLKSaqhT-DQPHRWKQeQ')">
+            </div>
+            <div class="relative z-10 text-center px-6 max-w-4xl">
+                <span class="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4 block">The Grand
+                    Unveiling</span>
+                <h2 class="text-5xl md:text-7xl font-light tracking-tight mb-8">Winter Gala <span
+                        class="italic font-normal">2026</span></h2>
+                <!-- Countdown Display -->
+                <div class="flex flex-wrap justify-center gap-4 md:gap-8 mt-12">
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-20 h-24 md:w-28 md:h-32 flex items-center justify-center bg-primary/5 border border-primary/20 rounded-lg">
+                            <span class="text-3xl md:text-5xl font-extralight text-primary" id="days">124</span>
+                        </div>
+                        <span class="mt-3 text-[10px] uppercase tracking-widest font-bold opacity-60">Days</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-20 h-24 md:w-28 md:h-32 flex items-center justify-center bg-primary/5 border border-primary/20 rounded-lg">
+                            <span class="text-3xl md:text-5xl font-extralight text-primary" id="hours">08</span>
+                        </div>
+                        <span class="mt-3 text-[10px] uppercase tracking-widest font-bold opacity-60">Hours</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-20 h-24 md:w-28 md:h-32 flex items-center justify-center bg-primary/5 border border-primary/20 rounded-lg">
+                            <span class="text-3xl md:text-5xl font-extralight text-primary" id="minutes">45</span>
+                        </div>
+                        <span class="mt-3 text-[10px] uppercase tracking-widest font-bold opacity-60">Minutes</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-20 h-24 md:w-28 md:h-32 flex items-center justify-center bg-primary/5 border border-primary/20 rounded-lg">
+                            <span class="text-3xl md:text-5xl font-extralight text-primary" id="seconds">12</span>
+                        </div>
+                        <span class="mt-3 text-[10px] uppercase tracking-widest font-bold opacity-60">Seconds</span>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-background-dark font-bold py-4 px-10 rounded-full tracking-widest uppercase text-xs transition-all transform hover:scale-105">
                         Request Exclusive Invite
                     </button>
-</div>
-</div>
-</section>
-<!-- Events List -->
-<section class="max-w-5xl mx-auto px-6 pt-24">
-<div class="flex items-end justify-between mb-12 border-b border-primary/10 pb-6">
-<div>
-<h3 class="text-3xl font-light tracking-tight">Upcoming Shows</h3>
-<p class="text-slate-500 mt-2">A curated selection of our global seasonal showcases.</p>
-</div>
-<div class="hidden md:block">
-<span class="text-xs uppercase tracking-widest text-primary font-bold">2026 Schedule</span>
-</div>
-</div>
-<div class="space-y-4">
-<!-- Event Row 1 -->
-<div class="group relative flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-primary/5 border border-transparent hover:border-primary/20 transition-all duration-500 overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="relative z-10 flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
-<div class="flex flex-col items-center md:items-start min-w-[120px]">
-<span class="text-primary text-2xl font-bold uppercase">Mar 15</span>
-<span class="text-xs uppercase tracking-widest opacity-60 font-medium">Paris, FR</span>
-</div>
-<div class="h-px w-12 bg-primary/20 hidden md:block"></div>
-<div>
-<h4 class="text-2xl font-medium tracking-tight group-hover:text-primary transition-colors">Winter Gala 2026</h4>
-<p class="text-sm text-slate-400 mt-1">Palais Garnier, Paris Haute Couture Week</p>
-</div>
-</div>
-<div class="relative z-10 mt-6 md:mt-0 flex items-center gap-6">
-<span class="hidden lg:block text-xs uppercase tracking-tighter opacity-40">Main Collection</span>
-<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest border border-primary/30 py-3 px-6 rounded hover:bg-primary hover:text-background-dark transition-all">
+                </div>
+            </div>
+        </section>
+        <!-- Events List -->
+        <section class="max-w-5xl mx-auto px-6 pt-24">
+            <div class="flex items-end justify-between mb-12 border-b border-primary/10 pb-6">
+                <div>
+                    <h3 class="text-3xl font-light tracking-tight">Upcoming Shows</h3>
+                    <p class="text-slate-500 mt-2">A curated selection of our global seasonal showcases.</p>
+                </div>
+                <div class="hidden md:block">
+                    <span class="text-xs uppercase tracking-widest text-primary font-bold">2026 Schedule</span>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <!-- Event Row 1 -->
+                <div
+                    class="group relative flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-primary/5 border border-transparent hover:border-primary/20 transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="relative z-10 flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
+                        <div class="flex flex-col items-center md:items-start min-w-[120px]">
+                            <span class="text-primary text-2xl font-bold uppercase">Mar 15</span>
+                            <span class="text-xs uppercase tracking-widest opacity-60 font-medium">Paris, FR</span>
+                        </div>
+                        <div class="h-px w-12 bg-primary/20 hidden md:block"></div>
+                        <div>
+                            <h4 class="text-2xl font-medium tracking-tight group-hover:text-primary transition-colors">
+                                Winter Gala 2026</h4>
+                            <p class="text-sm text-slate-400 mt-1">Palais Garnier, Paris Haute Couture Week</p>
+                        </div>
+                    </div>
+                    <div class="relative z-10 mt-6 md:mt-0 flex items-center gap-6">
+                        <span class="hidden lg:block text-xs uppercase tracking-tighter opacity-40">Main
+                            Collection</span>
+                        <button
+                            class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest border border-primary/30 py-3 px-6 rounded hover:bg-primary hover:text-background-dark transition-all">
                             View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-<!-- Event Row 2 -->
-<div class="group relative flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-transparent border border-primary/5 hover:border-primary/20 transition-all duration-500 overflow-hidden">
-<div class="relative z-10 flex flex-col md:flex-row items-center gap-8 text-center md:text-left opacity-70 group-hover:opacity-100 transition-opacity">
-<div class="flex flex-col items-center md:items-start min-w-[120px]">
-<span class="text-primary text-2xl font-bold uppercase">Jun 10</span>
-<span class="text-xs uppercase tracking-widest opacity-60 font-medium">New York, NY</span>
-</div>
-<div class="h-px w-12 bg-primary/20 hidden md:block"></div>
-<div>
-<h4 class="text-2xl font-medium tracking-tight group-hover:text-primary transition-colors">Metropolitan Showcase</h4>
-<p class="text-sm text-slate-400 mt-1">Upper East Side Atelier Grand Opening</p>
-</div>
-</div>
-<div class="relative z-10 mt-6 md:mt-0 flex items-center gap-6">
-<span class="hidden lg:block text-xs uppercase tracking-tighter opacity-40">Private Viewing</span>
-<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest border border-primary/30 py-3 px-6 rounded hover:bg-primary hover:text-background-dark transition-all">
+                        </button>
+                    </div>
+                </div>
+                <!-- Event Row 2 -->
+                <div
+                    class="group relative flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-transparent border border-primary/5 hover:border-primary/20 transition-all duration-500 overflow-hidden">
+                    <div
+                        class="relative z-10 flex flex-col md:flex-row items-center gap-8 text-center md:text-left opacity-70 group-hover:opacity-100 transition-opacity">
+                        <div class="flex flex-col items-center md:items-start min-w-[120px]">
+                            <span class="text-primary text-2xl font-bold uppercase">Jun 10</span>
+                            <span class="text-xs uppercase tracking-widest opacity-60 font-medium">New York, NY</span>
+                        </div>
+                        <div class="h-px w-12 bg-primary/20 hidden md:block"></div>
+                        <div>
+                            <h4 class="text-2xl font-medium tracking-tight group-hover:text-primary transition-colors">
+                                Metropolitan Showcase</h4>
+                            <p class="text-sm text-slate-400 mt-1">Upper East Side Atelier Grand Opening</p>
+                        </div>
+                    </div>
+                    <div class="relative z-10 mt-6 md:mt-0 flex items-center gap-6">
+                        <span class="hidden lg:block text-xs uppercase tracking-tighter opacity-40">Private
+                            Viewing</span>
+                        <button
+                            class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest border border-primary/30 py-3 px-6 rounded hover:bg-primary hover:text-background-dark transition-all">
                             Notify Me <span class="material-symbols-outlined text-sm">notifications</span>
-</button>
-</div>
-</div>
-<!-- Event Row 3 -->
-<div class="group relative flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-transparent border border-primary/5 hover:border-primary/20 transition-all duration-500 overflow-hidden">
-<div class="relative z-10 flex flex-col md:flex-row items-center gap-8 text-center md:text-left opacity-70 group-hover:opacity-100 transition-opacity">
-<div class="flex flex-col items-center md:items-start min-w-[120px]">
-<span class="text-primary text-2xl font-bold uppercase">Sep 05</span>
-<span class="text-xs uppercase tracking-widest opacity-60 font-medium">Milan, IT</span>
-</div>
-<div class="h-px w-12 bg-primary/20 hidden md:block"></div>
-<div>
-<h4 class="text-2xl font-medium tracking-tight group-hover:text-primary transition-colors">Autumn Equinox Preview</h4>
-<p class="text-sm text-slate-400 mt-1">Ready-to-wear Fall/Winter Selection</p>
-</div>
-</div>
-<div class="relative z-10 mt-6 md:mt-0 flex items-center gap-6">
-<span class="hidden lg:block text-xs uppercase tracking-tighter opacity-40">Seasonal Launch</span>
-<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest border border-primary/30 py-3 px-6 rounded hover:bg-primary hover:text-background-dark transition-all">
+                        </button>
+                    </div>
+                </div>
+                <!-- Event Row 3 -->
+                <div
+                    class="group relative flex flex-col md:flex-row items-center justify-between p-8 rounded-xl bg-transparent border border-primary/5 hover:border-primary/20 transition-all duration-500 overflow-hidden">
+                    <div
+                        class="relative z-10 flex flex-col md:flex-row items-center gap-8 text-center md:text-left opacity-70 group-hover:opacity-100 transition-opacity">
+                        <div class="flex flex-col items-center md:items-start min-w-[120px]">
+                            <span class="text-primary text-2xl font-bold uppercase">Sep 05</span>
+                            <span class="text-xs uppercase tracking-widest opacity-60 font-medium">Milan, IT</span>
+                        </div>
+                        <div class="h-px w-12 bg-primary/20 hidden md:block"></div>
+                        <div>
+                            <h4 class="text-2xl font-medium tracking-tight group-hover:text-primary transition-colors">
+                                Autumn Equinox Preview</h4>
+                            <p class="text-sm text-slate-400 mt-1">Ready-to-wear Fall/Winter Selection</p>
+                        </div>
+                    </div>
+                    <div class="relative z-10 mt-6 md:mt-0 flex items-center gap-6">
+                        <span class="hidden lg:block text-xs uppercase tracking-tighter opacity-40">Seasonal
+                            Launch</span>
+                        <button
+                            class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest border border-primary/30 py-3 px-6 rounded hover:bg-primary hover:text-background-dark transition-all">
                             View Lookbook <span class="material-symbols-outlined text-sm">menu_book</span>
-</button>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Marquee Footer -->
-<footer class="fixed bottom-0 w-full glass-effect border-t border-primary/20 h-14 overflow-hidden flex items-center">
-<div class="animate-marquee whitespace-nowrap flex items-center">
-<span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala March 15th 2026</span>
-<span class="material-symbols-outlined text-primary text-xs">diamond</span>
-<span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">New Arrivals in Store now!</span>
-<span class="material-symbols-outlined text-primary text-xs">diamond</span>
-<span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Experience the Craft: Private Consultations Available</span>
-<span class="material-symbols-outlined text-primary text-xs">diamond</span>
-<span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">Aura Thread Atelier | Paris | New York | Milan</span>
-<span class="material-symbols-outlined text-primary text-xs">diamond</span>
-<!-- Repeat for seamless loop -->
-<span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala March 15th 2026</span>
-<span class="material-symbols-outlined text-primary text-xs">diamond</span>
-<span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">New Arrivals in Store now!</span>
-<span class="material-symbols-outlined text-primary text-xs">diamond</span>
-<span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Experience the Craft: Private Consultations Available</span>
-<span class="material-symbols-outlined text-primary text-xs">diamond</span>
-<span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">Aura Thread Atelier | Paris | New York | Milan</span>
-<span class="material-symbols-outlined text-primary text-xs">diamond</span>
-</div>
-</footer>
-</body></html>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Marquee Footer -->
+    <footer
+        class="fixed bottom-0 w-full glass-effect border-t border-primary/20 h-14 overflow-hidden flex items-center">
+        <div class="animate-marquee whitespace-nowrap flex items-center">
+            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Upcoming Events: Winter
+                Gala March 15th 2026</span>
+            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
+            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">New Arrivals in Store
+                now!</span>
+            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
+            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Experience the Craft:
+                Private Consultations Available</span>
+            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
+            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">Aura Thread Atelier |
+                Paris | New York | Milan</span>
+            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
+            <!-- Repeat for seamless loop -->
+            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Upcoming Events: Winter
+                Gala March 15th 2026</span>
+            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
+            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">New Arrivals in Store
+                now!</span>
+            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
+            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Experience the Craft:
+                Private Consultations Available</span>
+            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
+            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">Aura Thread Atelier |
+                Paris | New York | Milan</span>
+            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
+        </div>
+    </footer>
+</body>
+
+</html>

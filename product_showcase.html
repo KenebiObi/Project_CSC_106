@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Aura Thread Atelier | Luxury Minimalist Fashion</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aura Thread Atelier | Luxury Minimalist Fashion</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -31,185 +38,254 @@
             },
         }
     </script>
-<style>
+    <style>
         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
+
         .animate-marquee {
             display: flex;
             width: max-content;
             animation: marquee 30s linear infinite;
         }
+
         .filter-active {
             border-bottom: 2px solid #d4af35;
             color: #d4af35;
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
-<!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
-<div class="max-w-7xl mx-auto flex items-center justify-between">
-<div class="flex items-center gap-12">
-<div class="flex items-center gap-3">
-<div class="text-primary">
-<span class="material-symbols-outlined text-3xl">token</span>
-</div>
-<h1 class="text-xl font-extrabold tracking-tighter uppercase">Aura Thread <span class="text-primary font-light">Atelier</span></h1>
-</div>
-<nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest uppercase opacity-70">
-<a class="hover:text-primary transition-colors" href="#">Collections</a>
-<a class="hover:text-primary transition-colors" href="#">Bespoke</a>
-<a class="hover:text-primary transition-colors" href="#">Atelier</a>
-</nav>
-</div>
-<div class="flex items-center gap-6">
-<div class="hidden lg:flex items-center bg-primary/5 border border-primary/20 rounded-full px-4 py-1.5">
-<span class="material-symbols-outlined text-primary text-sm">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-primary/40 w-40" placeholder="Search collection..." type="text"/>
-</div>
-<div class="flex items-center gap-4">
-<button class="relative p-2 hover:bg-primary/10 rounded-full transition-all">
-<span class="material-symbols-outlined">shopping_bag</span>
-<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
-</button>
-<button class="p-2 hover:bg-primary/10 rounded-full transition-all">
-<span class="material-symbols-outlined">person</span>
-</button>
-</div>
-</div>
-</div>
-</header>
-<main class="flex-grow max-w-7xl mx-auto w-full px-6 lg:px-20 py-12">
-<!-- Hero Section -->
-<section class="mb-16 text-center lg:text-left">
-<h2 class="text-5xl lg:text-7xl font-light mb-4 tracking-tight">The <span class="italic">Signature</span> Series</h2>
-<p class="text-lg text-slate-500 dark:text-slate-400 max-w-2xl font-light leading-relaxed">
-                Experience the pinnacle of sartorial excellence. Our latest collection blends ancestral techniques with contemporary silhouettes for the discerning modern individual.
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
+    <!-- Top Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-12">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <span class="material-symbols-outlined text-3xl">token</span>
+                    </div>
+                    <h1 class="text-xl font-extrabold tracking-tighter uppercase">Aura Thread <span
+                            class="text-primary font-light">Atelier</span></h1>
+                </div>
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest uppercase opacity-70">
+                    <a class="hover:text-primary transition-colors" href="#">Collections</a>
+                    <a class="hover:text-primary transition-colors" href="#">Bespoke</a>
+                    <a class="hover:text-primary transition-colors" href="#">Atelier</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="hidden lg:flex items-center bg-primary/5 border border-primary/20 rounded-full px-4 py-1.5">
+                    <span class="material-symbols-outlined text-primary text-sm">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-primary/40 w-40"
+                        placeholder="Search collection..." type="text" />
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="relative p-2 hover:bg-primary/10 rounded-full transition-all">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+                    </button>
+                    <button class="p-2 hover:bg-primary/10 rounded-full transition-all">
+                        <span class="material-symbols-outlined">person</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow max-w-7xl mx-auto w-full px-6 lg:px-20 py-12">
+        <!-- Hero Section -->
+        <section class="mb-16 text-center lg:text-left">
+            <h2 class="text-5xl lg:text-7xl font-light mb-4 tracking-tight">The <span class="italic">Signature</span>
+                Series</h2>
+            <p class="text-lg text-slate-500 dark:text-slate-400 max-w-2xl font-light leading-relaxed">
+                Experience the pinnacle of sartorial excellence. Our latest collection blends ancestral techniques with
+                contemporary silhouettes for the discerning modern individual.
             </p>
-</section>
-<!-- Filter Controls -->
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 border-b border-primary/10 pb-6">
-<div class="flex gap-8 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
-<button class="filter-active pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all" id="filter-all" onclick="filterItems('all')">All Pieces</button>
-<button class="text-slate-400 pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all hover:text-primary" id="filter-men" onclick="filterItems('men')">Men</button>
-<button class="text-slate-400 pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all hover:text-primary" id="filter-women" onclick="filterItems('women')">Women</button>
-</div>
-<div class="flex items-center gap-2 text-xs uppercase tracking-widest text-primary/60 font-bold">
-<span class="material-symbols-outlined text-sm">filter_list</span>
-<span>Refine Search</span>
-</div>
-</div>
-<!-- Product Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="product-grid">
-<!-- Item 1 (Women) -->
-<div class="product-item group" data-category="women">
-<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Elegant woman in a silk evening gown" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIgtAj1iW20LHCtzVvPlvQk_u2qlbyuIjaqX6gEpZbEWxteXgPhOZHSgnhVJk5VVRA-8PzwfbgHfMsKREYoybBHdA_M31OTYE4TWZnJCJmQV5anGvHdmavmQprZPVHaXIZVj0CiA45o_gRXkfYhwfot6CHf1mvcr9kGNK2DM5ogni0cfZHzdQ-gkkWIanOGdPR7vGIFgWEgQR7zJLb0Rs25gEIhrDig5-hiP972goUt4DtaE3M0ddNF1pu-pfwXhuqOeoXN8F5sA');"></div>
-<div class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<button class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
-</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">Silk Evening Gown</h3>
-<p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Noir Collection</p>
-</div>
-<p class="text-primary font-bold">$1,890</p>
-</div>
-</div>
-<!-- Item 2 (Men) -->
-<div class="product-item group" data-category="men">
-<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Man in a structured navy wool overcoat" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBm5DFTTlrQor8Imx4iX4ZBShjcO9bUcOObGHcoyDvx0hwIzL9tcrKvMLUVaTkjjA4qf8NOGwMHvokfggdu1fe9dstd7pvxpfRzjIJGIOc_dQ0f5wPyAyY6bvN9I53ABWiynGPId_Lu8ZLx1wiiZ6RFI0mfhHh_hR0IJOefROwsJHUEn9cU-y79VzuZddD2VE2WMXr-WrJnngizwOwmN-B3_mewmJGJ9h1CswRwew706NPUFxNXRN7iYmbh4Td2AKxYwqh7Bg3qIA');"></div>
-<div class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<button class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
-</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">Structured Overcoat</h3>
-<p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Winter Sartorial</p>
-</div>
-<p class="text-primary font-bold">$2,200</p>
-</div>
-</div>
-<!-- Item 3 (Women) -->
-<div class="product-item group" data-category="women">
-<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Tailored wool blazer on female model" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBw7X9pQ_6N5fQlz-2ALQy6gesdhpperz-knnzUWEuY-ASM3MQs1Vcke74WxMaBf9pJ4qabvsUGk8AIgnnsXQhdNeEDpu-XdkX_N_P_dmBh1aromitZ5SI0etqKY-HSmMjZvXa06aFkHqGcxWWDhE-C2mXBWLq6LPwAWhZ9MsSVn0puUmJuQ7Y9YO45XyTJ2LKAC94sAWIADZoPO4q9ECnEmVT8_iC2IHnUyO7X1HFkOjKIC2lfU2o7bm6plN8kDuN22hjVJneGA');"></div>
-<div class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<button class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
-</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">Tailored Wool Blazer</h3>
-<p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Heritage Tweed</p>
-</div>
-<p class="text-primary font-bold">$1,450</p>
-</div>
-</div>
-<!-- Item 4 (Men) -->
-<div class="product-item group" data-category="men">
-<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Man wearing a charcoal cashmere turtleneck" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcKbIx7_R4-iW_seqoK4T4xJl4ywkPnGqIbPQQVIkp9sfNocZKEHN7nvAguTbdRtc5DJ2yQSQp9eQfBPoDkgSLe24v1lZ9yYB42RSbAKlFzFLlQHNMJS9gKCpWDeKeU2tE294l6-k6u_kuG4t0LwfS_lQzjR8l8j6MKykkq-rtSb-ZePsso4BiP77OF5_YUkgJ7mMSD68NHUQrsuZ9GF_WrTDDXKKURHeDnqS4TMb__MKaJTaLwzeJqu93Ub8weIXouyGAEDFtzw');"></div>
-<div class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<button class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
-</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">Cashmere Turtleneck</h3>
-<p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Alpine Essentials</p>
-</div>
-<p class="text-primary font-bold">$780</p>
-</div>
-</div>
-<!-- Item 5 (Women) -->
-<div class="product-item group" data-category="women">
-<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Woman in a velvet wrap dress" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_blaneSt5n6Rw2gnS3XnroMmQyMO3uVQw4K5yuz4TIWk4meIONQmzsNVDl3ODjpq9KiAdu_ObT1sbWFOk4FEixWJdxDnup3Y1C3wIg1j2cOf3qB8wJvHJXUhr9f4wQsYzavJWDuvKWlMLe3ONIOjMTaqM6opXRY2Z0N6YTLmx5GLBG_sZoJ01KjiOCZZegcV__NELcsplBYKiob4A_KqdL0L1RQrzAd9_q-NtyJiDFJIlItIiUs9NKqFPfJUBZHkOrgKQK2QzTA');"></div>
-<div class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<button class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
-</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">Velvet Wrap Dress</h3>
-<p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Evening Gala</p>
-</div>
-<p class="text-primary font-bold">$1,200</p>
-</div>
-</div>
-<!-- Item 6 (Men) -->
-<div class="product-item group" data-category="men">
-<div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Man in a slim-fit designer tuxedo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwTTl9yPqU4tarAdWyHTyn1m-aeyrIfIbQNEpgwpDtT_r4jEX3_ZHP_zZfjEN-OuWM0xoKPvX-WAcojuWfzXGihCQ-sMbJA8elNpbe-y6s7L61ofZYzv70LM21bNGqacDAayguTu8ofAA0fLmy-8lqA2cPiTnoh48-fEPDudjcQiNNrDKDrftWmOwc3XzbM23gbNAxdlAHZxFfZKJ5-IrAAQQXXaeuiOUjvblguN0LQEXNB0xuj89qTZl_ZCJugBYZ3Zutad7bcw');"></div>
-<div class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<button class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick View</button>
-</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">Slim-fit Tuxedo</h3>
-<p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Signature Suiting</p>
-</div>
-<p class="text-primary font-bold">$2,800</p>
-</div>
-</div>
-</div>
-</main>
-<!-- Marquee Footer -->
-<footer class="w-full overflow-hidden bg-primary/10 border-t border-primary/20 py-4 mt-12">
-<div class="animate-marquee whitespace-nowrap">
-<span class="text-sm font-bold uppercase tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala March 15th | New Arrivals in Store now! | Aura Thread Atelier © 2024 | Bespoke Appointments Available</span>
-<span class="text-sm font-bold uppercase tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala March 15th | New Arrivals in Store now! | Aura Thread Atelier © 2024 | Bespoke Appointments Available</span>
-<span class="text-sm font-bold uppercase tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala March 15th | New Arrivals in Store now! | Aura Thread Atelier © 2024 | Bespoke Appointments Available</span>
-</div>
-</footer>
-<script>
+        </section>
+        <!-- Filter Controls -->
+        <div
+            class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 border-b border-primary/10 pb-6">
+            <div class="flex gap-8 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
+                <button
+                    class="filter-active pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all"
+                    id="filter-all" onclick="filterItems('all')">All Pieces</button>
+                <button
+                    class="text-slate-400 pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all hover:text-primary"
+                    id="filter-men" onclick="filterItems('men')">Men</button>
+                <button
+                    class="text-slate-400 pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all hover:text-primary"
+                    id="filter-women" onclick="filterItems('women')">Women</button>
+            </div>
+            <div class="flex items-center gap-2 text-xs uppercase tracking-widest text-primary/60 font-bold">
+                <span class="material-symbols-outlined text-sm">filter_list</span>
+                <span>Refine Search</span>
+            </div>
+        </div>
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="product-grid">
+            <!-- Item 1 (Women) -->
+            <div class="product-item group" data-category="women">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Elegant woman in a silk evening gown"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIgtAj1iW20LHCtzVvPlvQk_u2qlbyuIjaqX6gEpZbEWxteXgPhOZHSgnhVJk5VVRA-8PzwfbgHfMsKREYoybBHdA_M31OTYE4TWZnJCJmQV5anGvHdmavmQprZPVHaXIZVj0CiA45o_gRXkfYhwfot6CHf1mvcr9kGNK2DM5ogni0cfZHzdQ-gkkWIanOGdPR7vGIFgWEgQR7zJLb0Rs25gEIhrDig5-hiP972goUt4DtaE3M0ddNF1pu-pfwXhuqOeoXN8F5sA');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Silk Evening Gown</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Noir Collection</p>
+                    </div>
+                    <p class="text-primary font-bold">$1,890</p>
+                </div>
+            </div>
+            <!-- Item 2 (Men) -->
+            <div class="product-item group" data-category="men">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Man in a structured navy wool overcoat"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBm5DFTTlrQor8Imx4iX4ZBShjcO9bUcOObGHcoyDvx0hwIzL9tcrKvMLUVaTkjjA4qf8NOGwMHvokfggdu1fe9dstd7pvxpfRzjIJGIOc_dQ0f5wPyAyY6bvN9I53ABWiynGPId_Lu8ZLx1wiiZ6RFI0mfhHh_hR0IJOefROwsJHUEn9cU-y79VzuZddD2VE2WMXr-WrJnngizwOwmN-B3_mewmJGJ9h1CswRwew706NPUFxNXRN7iYmbh4Td2AKxYwqh7Bg3qIA');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Structured Overcoat</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Winter Sartorial</p>
+                    </div>
+                    <p class="text-primary font-bold">$2,200</p>
+                </div>
+            </div>
+            <!-- Item 3 (Women) -->
+            <div class="product-item group" data-category="women">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Tailored wool blazer on female model"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBw7X9pQ_6N5fQlz-2ALQy6gesdhpperz-knnzUWEuY-ASM3MQs1Vcke74WxMaBf9pJ4qabvsUGk8AIgnnsXQhdNeEDpu-XdkX_N_P_dmBh1aromitZ5SI0etqKY-HSmMjZvXa06aFkHqGcxWWDhE-C2mXBWLq6LPwAWhZ9MsSVn0puUmJuQ7Y9YO45XyTJ2LKAC94sAWIADZoPO4q9ECnEmVT8_iC2IHnUyO7X1HFkOjKIC2lfU2o7bm6plN8kDuN22hjVJneGA');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Tailored Wool Blazer</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Heritage Tweed</p>
+                    </div>
+                    <p class="text-primary font-bold">$1,450</p>
+                </div>
+            </div>
+            <!-- Item 4 (Men) -->
+            <div class="product-item group" data-category="men">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Man wearing a charcoal cashmere turtleneck"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcKbIx7_R4-iW_seqoK4T4xJl4ywkPnGqIbPQQVIkp9sfNocZKEHN7nvAguTbdRtc5DJ2yQSQp9eQfBPoDkgSLe24v1lZ9yYB42RSbAKlFzFLlQHNMJS9gKCpWDeKeU2tE294l6-k6u_kuG4t0LwfS_lQzjR8l8j6MKykkq-rtSb-ZePsso4BiP77OF5_YUkgJ7mMSD68NHUQrsuZ9GF_WrTDDXKKURHeDnqS4TMb__MKaJTaLwzeJqu93Ub8weIXouyGAEDFtzw');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Cashmere Turtleneck</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Alpine Essentials</p>
+                    </div>
+                    <p class="text-primary font-bold">$780</p>
+                </div>
+            </div>
+            <!-- Item 5 (Women) -->
+            <div class="product-item group" data-category="women">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Woman in a velvet wrap dress"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_blaneSt5n6Rw2gnS3XnroMmQyMO3uVQw4K5yuz4TIWk4meIONQmzsNVDl3ODjpq9KiAdu_ObT1sbWFOk4FEixWJdxDnup3Y1C3wIg1j2cOf3qB8wJvHJXUhr9f4wQsYzavJWDuvKWlMLe3ONIOjMTaqM6opXRY2Z0N6YTLmx5GLBG_sZoJ01KjiOCZZegcV__NELcsplBYKiob4A_KqdL0L1RQrzAd9_q-NtyJiDFJIlItIiUs9NKqFPfJUBZHkOrgKQK2QzTA');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Velvet Wrap Dress</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Evening Gala</p>
+                    </div>
+                    <p class="text-primary font-bold">$1,200</p>
+                </div>
+            </div>
+            <!-- Item 6 (Men) -->
+            <div class="product-item group" data-category="men">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Man in a slim-fit designer tuxedo"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwTTl9yPqU4tarAdWyHTyn1m-aeyrIfIbQNEpgwpDtT_r4jEX3_ZHP_zZfjEN-OuWM0xoKPvX-WAcojuWfzXGihCQ-sMbJA8elNpbe-y6s7L61ofZYzv70LM21bNGqacDAayguTu8ofAA0fLmy-8lqA2cPiTnoh48-fEPDudjcQiNNrDKDrftWmOwc3XzbM23gbNAxdlAHZxFfZKJ5-IrAAQQXXaeuiOUjvblguN0LQEXNB0xuj89qTZl_ZCJugBYZ3Zutad7bcw');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Slim-fit Tuxedo</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Signature Suiting</p>
+                    </div>
+                    <p class="text-primary font-bold">$2,800</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Marquee Footer -->
+    <footer class="w-full overflow-hidden bg-primary/10 border-t border-primary/20 py-4 mt-12">
+        <div class="animate-marquee whitespace-nowrap">
+            <span class="text-sm font-bold uppercase tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala
+                March 15th | New Arrivals in Store now! | Aura Thread Atelier © 2024 | Bespoke Appointments
+                Available</span>
+            <span class="text-sm font-bold uppercase tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala
+                March 15th | New Arrivals in Store now! | Aura Thread Atelier © 2024 | Bespoke Appointments
+                Available</span>
+            <span class="text-sm font-bold uppercase tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala
+                March 15th | New Arrivals in Store now! | Aura Thread Atelier © 2024 | Bespoke Appointments
+                Available</span>
+        </div>
+    </footer>
+    <script>
         function filterItems(category) {
             const items = document.querySelectorAll('.product-item');
             const buttons = {
@@ -238,4 +314,6 @@
             });
         }
     </script>
-</body></html>
+</body>
+
+</html>
