@@ -3,100 +3,21 @@
 <html class="dark" lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Upcoming Events | Aura Thread Atelier</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#d4af35",
-                        "background-light": "#f8f7f6",
-                        "background-dark": "#201d12",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-    <style>
-        @keyframes marquee {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-marquee {
-            display: flex;
-            width: fit-content;
-            animation: marquee 30s linear infinite;
-        }
-
-        .glass-effect {
-            background: rgba(32, 29, 18, 0.6);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(212, 175, 53, 0.1);
-        }
-    </style>
+     
+        <meta charset="utf-8">
+        <meta name="keywords" content="Wazobia Farkiyya, bespoke tailoring, luxury African fashion, custom clothing">
+        <meta name="description" content="Discover Wazobia Farkiyya, where bespoke tailoring meets African elegance. Explore our curated collections of custom-made garments, crafted with precision and passion. Experience the art of personalized fashion with us.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Events | Wazobia Farkiyya - Bespoke Tailoring Redefined</title> 
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script src="js/tailwind-config.js"></script>
+        <script src="js/head.js" defer></script>
+    
 </head>
 
-<body
-    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-background-dark">
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-background-dark">
     <!-- Top Navigation Bar -->
-    <header class="sticky top-0 z-50 w-full border-b border-primary/10 glass-effect">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="text-primary">
-                    <svg class="w-8 h-8" fill="currentColor" viewbox="0 0 48 48">
-                        <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
-                            fill-rule="evenodd"></path>
-                    </svg>
-                </div>
-                <h1 class="text-xl font-bold tracking-tight uppercase">Aura Thread <span
-                        class="font-light">Atelier</span></h1>
-            </div>
-            <nav class="hidden md:flex items-center gap-10">
-                <a class="text-sm font-medium tracking-wide hover:text-primary transition-colors"
-                    href="#">Collections</a>
-                <a class="text-sm font-medium tracking-wide text-primary" href="#">Events</a>
-                <a class="text-sm font-medium tracking-wide hover:text-primary transition-colors" href="#">Book
-                    Appointment</a>
-            </nav>
-            <div class="flex items-center gap-4">
-                <button
-                    class="hidden sm:flex h-10 px-6 items-center justify-center rounded bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-widest hover:bg-primary/20 transition-all">
-                    Login
-                </button>
-                <div class="w-10 h-10 rounded-full border border-primary/30 bg-cover bg-center"
-                    data-alt="Portrait of a stylist in a studio"
-                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtgpxNTLldHBkQE2kYowh6VhI-2-LSnMP3N0zc2xfeVLR2YJbQDrgHnEFbI1BAh9zrwGFTuMZUrkbPnt3HuZ2OU6ytJ9p_hd-37bHwJB2W_jbbDiyy39yEIVzfMEWpF4heTT0PMPlrtGocGrX6mbrPiPxIpMKjsIaeRKovt11PirvOibutEXyzT67q7pb1f-UtHadxKOOgCh2bY2COO0rJBo5Wl99pxS-GYFchk5HvLVHw25aTWK144nxQhf1t5YtQBVzVyRpP1g')">
-                </div>
-            </div>
-        </div>
-    </header>
+    <section id="header"></section>
     <main class="pb-32">
         <!-- Hero Section with Countdown -->
         <section class="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
@@ -240,37 +161,10 @@
             </div>
         </section>
     </main>
-    <!-- Marquee Footer -->
-    <footer
-        class="fixed bottom-0 w-full glass-effect border-t border-primary/20 h-14 overflow-hidden flex items-center">
-        <div class="animate-marquee whitespace-nowrap flex items-center">
-            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Upcoming Events: Winter
-                Gala March 15th 2026</span>
-            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
-            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">New Arrivals in Store
-                now!</span>
-            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
-            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Experience the Craft:
-                Private Consultations Available</span>
-            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
-            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">Aura Thread Atelier |
-                Paris | New York | Milan</span>
-            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
-            <!-- Repeat for seamless loop -->
-            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Upcoming Events: Winter
-                Gala March 15th 2026</span>
-            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
-            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">New Arrivals in Store
-                now!</span>
-            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
-            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-primary px-8">Experience the Craft:
-                Private Consultations Available</span>
-            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
-            <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-300 px-8">Aura Thread Atelier |
-                Paris | New York | Milan</span>
-            <span class="material-symbols-outlined text-primary text-xs">diamond</span>
-        </div>
-    </footer>
+    <!-- Footer -->
+        <section id="footer"></section>
+        <script src="js/custom.js"></script>
+    
 </body>
 
 </html>

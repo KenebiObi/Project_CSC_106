@@ -3,112 +3,25 @@
 <html class="dark" lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Aura Thread Atelier | Luxury Minimalist Fashion</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#d4af35",
-                        "background-light": "#f8f7f6",
-                        "background-dark": "#201d12",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-    <style>
-        @keyframes marquee {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-marquee {
-            display: flex;
-            width: max-content;
-            animation: marquee 30s linear infinite;
-        }
-
-        .filter-active {
-            border-bottom: 2px solid #d4af35;
-            color: #d4af35;
-        }
-    </style>
+     
+        <meta charset="utf-8">
+        <meta name="keywords" content="Wazobia Farkiyya, bespoke tailoring, luxury African fashion, custom clothing">
+        <meta name="description" content="Discover Wazobia Farkiyya, where bespoke tailoring meets African elegance. Explore our curated collections of custom-made garments, crafted with precision and passion. Experience the art of personalized fashion with us.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Showcase | Wazobia Farkiyya - Bespoke Tailoring Redefined</title> 
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script src="js/tailwind-config.js"></script>
+        <script src="js/head.js" defer></script>
+    
 </head>
 
-<body
-    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
     <!-- Top Navigation Bar -->
-    <header
-        class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-12">
-                <div class="flex items-center gap-3">
-                    <div class="text-primary">
-                        <span class="material-symbols-outlined text-3xl">token</span>
-                    </div>
-                    <h1 class="text-xl font-extrabold tracking-tighter uppercase">Aura Thread <span
-                            class="text-primary font-light">Atelier</span></h1>
-                </div>
-                <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest uppercase opacity-70">
-                    <a class="hover:text-primary transition-colors" href="#">Collections</a>
-                    <a class="hover:text-primary transition-colors" href="#">Bespoke</a>
-                    <a class="hover:text-primary transition-colors" href="#">Atelier</a>
-                </nav>
-            </div>
-            <div class="flex items-center gap-6">
-                <div class="hidden lg:flex items-center bg-primary/5 border border-primary/20 rounded-full px-4 py-1.5">
-                    <span class="material-symbols-outlined text-primary text-sm">search</span>
-                    <input class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-primary/40 w-40"
-                        placeholder="Search collection..." type="text" />
-                </div>
-                <div class="flex items-center gap-4">
-                    <button class="relative p-2 hover:bg-primary/10 rounded-full transition-all">
-                        <span class="material-symbols-outlined">shopping_bag</span>
-                        <span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
-                    </button>
-                    <button class="p-2 hover:bg-primary/10 rounded-full transition-all">
-                        <span class="material-symbols-outlined">person</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
+    <section id="header"></section>
     <main class="flex-grow max-w-7xl mx-auto w-full px-6 lg:px-20 py-12">
         <!-- Hero Section -->
         <section class="mb-16 text-center lg:text-left">
-            <h2 class="text-5xl lg:text-7xl font-light mb-4 tracking-tight">The <span class="italic">Signature</span>
-                Series</h2>
-            <p class="text-lg text-slate-500 dark:text-slate-400 max-w-2xl font-light leading-relaxed">
-                Experience the pinnacle of sartorial excellence. Our latest collection blends ancestral techniques with
-                contemporary silhouettes for the discerning modern individual.
-            </p>
+           <!-- Display banner image or jumbotron later -->            
         </section>
         <!-- Filter Controls -->
         <div
@@ -271,49 +184,11 @@
             </div>
         </div>
     </main>
-    <!-- Marquee Footer -->
-    <footer class="w-full overflow-hidden bg-primary/10 border-t border-primary/20 py-4 mt-12">
-        <div class="animate-marquee whitespace-nowrap">
-            <span class="text-sm font-bold uppercase tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala
-                March 15th | New Arrivals in Store now! | Aura Thread Atelier © 2024 | Bespoke Appointments
-                Available</span>
-            <span class="text-sm font-bold uppercase tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala
-                March 15th | New Arrivals in Store now! | Aura Thread Atelier © 2024 | Bespoke Appointments
-                Available</span>
-            <span class="text-sm font-bold uppercase tracking-[0.3em] text-primary px-8">Upcoming Events: Winter Gala
-                March 15th | New Arrivals in Store now! | Aura Thread Atelier © 2024 | Bespoke Appointments
-                Available</span>
-        </div>
-    </footer>
-    <script>
-        function filterItems(category) {
-            const items = document.querySelectorAll('.product-item');
-            const buttons = {
-                all: document.getElementById('filter-all'),
-                men: document.getElementById('filter-men'),
-                women: document.getElementById('filter-women')
-            };
-
-            // Reset buttons
-            Object.values(buttons).forEach(btn => {
-                btn.classList.remove('filter-active');
-                btn.classList.add('text-slate-400');
-            });
-
-            // Set active button
-            buttons[category].classList.add('filter-active');
-            buttons[category].classList.remove('text-slate-400');
-
-            // Filter logic
-            items.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-category') === category) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    <!-- Footer -->
+    <section id="footer"></section>
+    <script src="js/custom.js"></script>
+   
+  
 </body>
 
 </html>

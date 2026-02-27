@@ -1,107 +1,23 @@
 <!DOCTYPE html>
 
 <html class="dark" lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Board of Trustees | Aura Thread Atelier</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#d4af35",
-                        "background-light": "#f8f7f6",
-                        "background-dark": "#201d12",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-    <style>
-        @keyframes marquee {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        .animate-marquee {
-            animation: marquee 25s linear infinite;
-        }
-
-        .member-card:hover .bio-overlay {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+     
+        <meta charset="utf-8">
+        <meta name="keywords" content="Wazobia Farkiyya, bespoke tailoring, luxury African fashion, custom clothing">
+        <meta name="description" content="Discover Wazobia Farkiyya, where bespoke tailoring meets African elegance. Explore our curated collections of custom-made garments, crafted with precision and passion. Experience the art of personalized fashion with us.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Board of Trustees | Wazobia Farkiyya - Bespoke Tailoring Redefined</title> 
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script src="js/tailwind-config.js"></script>
+        <script src="js/head.js" defer></script>
+    
 </head>
-
 <body
     class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-primary/30">
     <div class="relative flex min-h-screen flex-col overflow-x-hidden">
         <!-- Top Navigation -->
-        <header
-            class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-12 lg:px-24">
-            <div class="mx-auto flex h-20 max-w-7xl items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <div class="text-primary">
-                        <svg class="h-8 w-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
-                                fill="currentColor" fill-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <h1 class="text-xl font-extrabold tracking-tighter text-slate-900 dark:text-slate-100 uppercase">
-                        Aura Thread <span class="text-primary font-light">Atelier</span></h1>
-                </div>
-                <nav class="hidden lg:flex items-center gap-10">
-                    <a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors"
-                        href="#">Collections</a>
-                    <a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors"
-                        href="#">Atelier</a>
-                    <a class="text-sm font-bold tracking-widest uppercase text-primary" href="#">Board</a>
-                    <a class="text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors"
-                        href="#">Contact</a>
-                </nav>
-                <div class="flex items-center gap-4">
-                    <button
-                        class="p-2 text-slate-900 dark:text-slate-100 hover:bg-primary/10 rounded-lg transition-all">
-                        <span class="material-symbols-outlined text-[22px]">person</span>
-                    </button>
-                    <button
-                        class="p-2 text-slate-900 dark:text-slate-100 hover:bg-primary/10 rounded-lg transition-all relative">
-                        <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
-                        <span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-primary"></span>
-                    </button>
-                    <button class="lg:hidden p-2 text-slate-900 dark:text-slate-100">
-                        <span class="material-symbols-outlined">menu</span>
-                    </button>
-                </div>
-            </div>
-        </header>
+       <section id="header"></section>
         <!-- Hero Section -->
         <main class="flex-grow">
             <section class="px-6 py-16 md:py-24 lg:px-24 max-w-7xl mx-auto">
@@ -252,52 +168,11 @@
                 </div>
             </section>
         </main>
-        <!-- Marquee Footer Section -->
-        <footer class="mt-auto border-t border-primary/20 bg-background-dark py-4 overflow-hidden">
-            <div class="flex whitespace-nowrap overflow-hidden group">
-                <div class="animate-marquee flex gap-8 py-2">
-                    <span
-                        class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Upcoming
-                        Events: Winter Gala March 15th</span>
-                    <span
-                        class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">New
-                        Arrivals in Store now!</span>
-                    <span
-                        class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Private
-                        Fittings Available in Paris</span>
-                    <span
-                        class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">Exclusive
-                        Membership Open for Summer 2024</span>
-                    <span
-                        class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Upcoming
-                        Events: Winter Gala March 15th</span>
-                    <span
-                        class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">New
-                        Arrivals in Store now!</span>
-                </div>
-                <!-- Duplicate for seamless loop -->
-                <div aria-hidden="true" class="animate-marquee flex gap-8 py-2">
-                    <span
-                        class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Upcoming
-                        Events: Winter Gala March 15th</span>
-                    <span
-                        class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">New
-                        Arrivals in Store now!</span>
-                    <span
-                        class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Private
-                        Fittings Available in Paris</span>
-                    <span
-                        class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">Exclusive
-                        Membership Open for Summer 2024</span>
-                    <span
-                        class="text-primary text-sm font-bold uppercase tracking-[0.2em] px-4 border-r border-primary/20">Upcoming
-                        Events: Winter Gala March 15th</span>
-                    <span
-                        class="text-slate-100 text-sm font-light uppercase tracking-[0.2em] px-4 border-r border-primary/20">New
-                        Arrivals in Store now!</span>
-                </div>
-            </div>
-        </footer>
+
+        <!-- Footer -->
+        <section id="footer"></section>
+        <script src="js/custom.js"></script>
+        
     </div>
 </body>
 
