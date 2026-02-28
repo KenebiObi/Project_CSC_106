@@ -110,4 +110,34 @@ document.addEventListener("DOMContentLoaded", () => {
         // Set min date for the date picker to today
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('date').setAttribute('min', today);
+
   
+// Custom JavaScript for theme toggle
+const toggleBtn = document.getElementById('theme-toggle');
+const htmlEl = document.documentElement;
+
+// Load saved theme
+if (localStorage.getItem('theme') === 'dark') {
+    htmlEl.classList.add('dark');
+    toggleBtn.textContent = '☀️';
+} else {
+    toggleBtn.textContent = '🌙';
+}
+
+toggleBtn.addEventListener('click', () => {
+    htmlEl.classList.toggle('dark');
+
+    if (htmlEl.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        toggleBtn.textContent = '☀️';
+    } else {
+        localStorage.setItem('theme', 'light');
+        toggleBtn.textContent = '🌙';
+    }
+});
+
+if (!localStorage.getItem('theme')) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        htmlEl.classList.add('dark');
+    }
+}

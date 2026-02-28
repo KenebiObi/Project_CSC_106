@@ -1,4 +1,16 @@
+html, body {
+  background: white;
+  color: black;
+}
 
+.dark body {
+  background: #111;
+  color: white;
+}
+
+.brand-color{
+    color: #d4af35;
+}
 /* Marquee animation */
 
         @keyframes marquee {
@@ -22,3 +34,4 @@
             color: #d4af35;
         }
         
+  
