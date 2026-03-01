@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Wazobia Farkiyya, DOM Structure, fashion house website architecture">
+    <meta name="description" content="Document Object Model structure for the Wazobia Farkiyya fashion house website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Structure | Wazobia Farkiyya</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <script src="js/head.js" defer></script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+    <section id="header"></section>
+
+    <main class="flex-grow px-6 py-16 max-w-6xl mx-auto w-full">
+        <div class="space-y-4 mb-10">
+            <p class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Architecture</p>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight">Website DOM Structure</h1>
+            <p class="text-slate-600 dark:text-slate-400 max-w-3xl">
+                This page outlines the Document Object Model (DOM) structure used across the fashion house website and
+                shared components.
+            </p>
+        </div>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
+                <h2 class="text-xl font-bold mb-4">High-Level DOM Tree</h2>
+                <pre
+                    class="text-sm leading-7 overflow-x-auto text-slate-700 dark:text-slate-300">html
+  head
+    meta*
+    title
+    script (tailwind, config, head inject)
+  body
+    div (page wrapper)
+      section#header (injected from inc/header.html)
+      main
+        section* (page-specific content)
+      section#footer (injected from inc/footer.html)
+      script (js/custom.js)</pre>
+            </article>
+
+            <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
+                <h2 class="text-xl font-bold mb-4">Shared Components</h2>
+                <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                    <li><span class="font-semibold text-primary">Header Include:</span> Shared navigation links and theme toggle.</li>
+                    <li><span class="font-semibold text-primary">Footer Include:</span> Shared marquee and contact/footer info.</li>
+                    <li><span class="font-semibold text-primary">JS Layer:</span> Header/footer injection, theme toggle, greeting, product filtering, form validation.</li>
+                    <li><span class="font-semibold text-primary">Styling:</span> External styles from <code>css/fonts.css</code> and <code>css/style.css</code>.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <section id="footer"></section>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
