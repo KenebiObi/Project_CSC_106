@@ -1,37 +1,37 @@
-html, body {
-  background: white;
-  color: black;
+html,
+body {
+    background: white;
+    color: black;
 }
 
 .dark body {
-  background: #111;
-  color: white;
+    background: #111;
+    color: white;
 }
 
-.brand-color{
+.brand-color {
     color: #d4af35;
 }
+
 /* Marquee animation */
 
-        @keyframes marquee {
-            0% {
-                transform: translateX(0);
-            }
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
 
-            100% {
-                transform: translateX(-50%);
-            }
-        }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
-        .animate-marquee {
-            display: flex;
-            width: max-content;
-            animation: marquee 30s linear infinite;
-        }
+.animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+}
 
-        .filter-active {
-            border-bottom: 2px solid #d4af35;
-            color: #d4af35;
-        }
-        
-  
+.filter-active {
+    border-bottom: 2px solid #d4af35;
+    color: #d4af35;
+}
