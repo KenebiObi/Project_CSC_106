@@ -18,8 +18,9 @@ function filterItems(category) {
   const items = document.querySelectorAll(".product-item");
   const buttons = {
     all: document.getElementById("filter-all"),
-    men: document.getElementById("filter-men"),
-    women: document.getElementById("filter-women"),
+    Yoruba: document.getElementById("filter-yoruba"),
+    Igbo: document.getElementById("filter-igbo"),
+    Hausa: document.getElementById("filter-hausa"),
   };
 
   Object.values(buttons)
