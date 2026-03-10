@@ -138,10 +138,46 @@ function initThemeToggle() {
   });
 }
 
+// Custom JavaScript for event countdown timer
+function initEventCountdown() {
+  const daysEl = document.getElementById("days");
+  const hoursEl = document.getElementById("hours");
+  const minutesEl = document.getElementById("minutes");
+  const secondsEl = document.getElementById("seconds");
+
+  if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+
+  // Main event: Lagos Heritage Runway on March 15, 2026 (WAT).
+  const targetTime = new Date("2026-04-15T18:00:00+01:00").getTime();
+
+  function updateCountdown() {
+    const now = Date.now();
+    const remaining = Math.max(targetTime - now, 0);
+
+    const days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((remaining / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((remaining / (1000 * 60)) % 60);
+    const seconds = Math.floor((remaining / 1000) % 60);
+
+    daysEl.textContent = String(days);
+    hoursEl.textContent = String(hours).padStart(2, "0");
+    minutesEl.textContent = String(minutes).padStart(2, "0");
+    secondsEl.textContent = String(seconds).padStart(2, "0");
+
+    if (remaining <= 0) {
+      clearInterval(timer);
+    }
+  }
+
+  updateCountdown();
+  const timer = setInterval(updateCountdown, 1000);
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   await Promise.all([loadHTML("header", "inc/header.html"), loadHTML("footer", "inc/footer.html")]);
 
   initThemeToggle();
   initGreeting();
   initBookingForm();
+  initEventCountdown();
 });
