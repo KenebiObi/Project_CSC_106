@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+     
+        <meta charset="utf-8">
+        <meta name="keywords" content="Wazobia Farkiyya collections, Nigerian designer wear, Yoruba fashion, Hausa fashion, Igbo fashion">
+        <meta name="description" content="Explore Wazobia Farkiyya collections featuring Yoruba, Hausa, Igbo, and minority-tribe inspired designer fashion.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Showcase | Wazobia Farkiyya - Nigerian Heritage Fashion House</title> 
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script src="js/tailwind-config.js"></script>
+        <script src="js/head.js" defer></script>
+    
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
+    <!-- Top Navigation Bar -->
+    <section id="header"></section>
+    <main class="flex-grow max-w-7xl mx-auto w-full px-6 lg:px-20 py-12">
+        <!-- Hero Section -->
+        <section class="mb-16 text-center lg:text-left">
+           <!-- Display banner image or jumbotron later -->            
+        </section>
+        <!-- Filter Controls -->
+        <div
+            class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 border-b border-primary/10 pb-6">
+            <div class="flex gap-8 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
+                <button
+                    class="filter-active pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all"
+                    id="filter-all" onclick="filterItems('all')">All Pieces</button>
+                <button
+                    class="text-slate-400 pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all hover:text-primary"
+                    id="filter-men" onclick="filterItems('men')">Yoruba</button>
+                <button
+                    class="text-slate-400 pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all hover:text-primary"
+                    id="filter-women" onclick="filterItems('women')">Hausa</button>
+                <button
+                    class="text-slate-400 pb-2 text-sm font-bold uppercase tracking-[0.2em] whitespace-nowrap transition-all hover:text-primary"
+                    id="filter-minority" onclick="filterItems('minority')">Igbo</button>
+            </div>
+            <div class="flex items-center gap-2 text-xs uppercase tracking-widest text-primary/60 font-bold">
+                <span class="material-symbols-outlined text-sm">filter_list</span>
+                <span>Refine Search</span>
+            </div>
+        </div>
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="product-grid">
+            <!-- Item 1 (Women) -->
+            <div class="product-item group" data-category="women">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Premium Yoruba-inspired occasion wear"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIgtAj1iW20LHCtzVvPlvQk_u2qlbyuIjaqX6gEpZbEWxteXgPhOZHSgnhVJk5VVRA-8PzwfbgHfMsKREYoybBHdA_M31OTYE4TWZnJCJmQV5anGvHdmavmQprZPVHaXIZVj0CiA45o_gRXkfYhwfot6CHf1mvcr9kGNK2DM5ogni0cfZHzdQ-gkkWIanOGdPR7vGIFgWEgQR7zJLb0Rs25gEIhrDig5-hiP972goUt4DtaE3M0ddNF1pu-pfwXhuqOeoXN8F5sA');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Aso Oke Evening Set</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Yoruba Prestige</p>
+                    </div>
+                    <p class="text-primary font-bold">₦1,890,000</p>
+                </div>
+            </div>
+            <!-- Item 2 (Men) -->
+            <div class="product-item group" data-category="men">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Refined Hausa-inspired kaftan styling"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBm5DFTTlrQor8Imx4iX4ZBShjcO9bUcOObGHcoyDvx0hwIzL9tcrKvMLUVaTkjjA4qf8NOGwMHvokfggdu1fe9dstd7pvxpfRzjIJGIOc_dQ0f5wPyAyY6bvN9I53ABWiynGPId_Lu8ZLx1wiiZ6RFI0mfhHh_hR0IJOefROwsJHUEn9cU-y79VzuZddD2VE2WMXr-WrJnngizwOwmN-B3_mewmJGJ9h1CswRwew706NPUFxNXRN7iYmbh4Td2AKxYwqh7Bg3qIA');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Northern Royal Kaftan</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Hausa Regal</p>
+                    </div>
+                    <p class="text-primary font-bold">₦2,200,000</p>
+                </div>
+            </div>
+            <!-- Item 3 (Women) -->
+            <div class="product-item group" data-category="women">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Igbo-inspired ceremonial statement outfit"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBw7X9pQ_6N5fQlz-2ALQy6gesdhpperz-knnzUWEuY-ASM3MQs1Vcke74WxMaBf9pJ4qabvsUGk8AIgnnsXQhdNeEDpu-XdkX_N_P_dmBh1aromitZ5SI0etqKY-HSmMjZvXa06aFkHqGcxWWDhE-C2mXBWLq6LPwAWhZ9MsSVn0puUmJuQ7Y9YO45XyTJ2LKAC94sAWIADZoPO4q9ECnEmVT8_iC2IHnUyO7X1HFkOjKIC2lfU2o7bm6plN8kDuN22hjVJneGA');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Isiagu Statement Set</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Igbo Classic</p>
+                    </div>
+                    <p class="text-primary font-bold">₦1,450,000</p>
+                </div>
+            </div>
+            <!-- Item 4 (Men) -->
+            <div class="product-item group" data-category="men">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Classic embroidered northern ceremonial outfit"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcKbIx7_R4-iW_seqoK4T4xJl4ywkPnGqIbPQQVIkp9sfNocZKEHN7nvAguTbdRtc5DJ2yQSQp9eQfBPoDkgSLe24v1lZ9yYB42RSbAKlFzFLlQHNMJS9gKCpWDeKeU2tE294l6-k6u_kuG4t0LwfS_lQzjR8l8j6MKykkq-rtSb-ZePsso4BiP77OF5_YUkgJ7mMSD68NHUQrsuZ9GF_WrTDDXKKURHeDnqS4TMb__MKaJTaLwzeJqu93Ub8weIXouyGAEDFtzw');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Embroidered Babban Riga</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Northern Essentials</p>
+                    </div>
+                    <p class="text-primary font-bold">₦780,000</p>
+                </div>
+            </div>
+            <!-- Item 5 (Women) -->
+            <div class="product-item group" data-category="women">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Cultural bead-accented celebration look"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_blaneSt5n6Rw2gnS3XnroMmQyMO3uVQw4K5yuz4TIWk4meIONQmzsNVDl3ODjpq9KiAdu_ObT1sbWFOk4FEixWJdxDnup3Y1C3wIg1j2cOf3qB8wJvHJXUhr9f4wQsYzavJWDuvKWlMLe3ONIOjMTaqM6opXRY2Z0N6YTLmx5GLBG_sZoJ01KjiOCZZegcV__NELcsplBYKiob4A_KqdL0L1RQrzAd9_q-NtyJiDFJIlItIiUs9NKqFPfJUBZHkOrgKQK2QzTA');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Coral Bead Occasion Wear</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Ceremonial Edit</p>
+                    </div>
+                    <p class="text-primary font-bold">₦1,200,000</p>
+                </div>
+            </div>
+            <!-- Item 6 (Men) -->
+            <div class="product-item group" data-category="men">
+                <div class="relative overflow-hidden aspect-[3/4] rounded-lg mb-4 bg-primary/5">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Modern agbada-inspired premium ensemble"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwTTl9yPqU4tarAdWyHTyn1m-aeyrIfIbQNEpgwpDtT_r4jEX3_ZHP_zZfjEN-OuWM0xoKPvX-WAcojuWfzXGihCQ-sMbJA8elNpbe-y6s7L61ofZYzv70LM21bNGqacDAayguTu8ofAA0fLmy-8lqA2cPiTnoh48-fEPDudjcQiNNrDKDrftWmOwc3XzbM23gbNAxdlAHZxFfZKJ5-IrAAQQXXaeuiOUjvblguN0LQEXNB0xuj89qTZl_ZCJugBYZ3Zutad7bcw');">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button
+                            class="bg-primary text-background-dark font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform">Quick
+                            View</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-base font-semibold tracking-wide group-hover:text-primary transition-colors">
+                            Elite Agbada Ensemble</h3>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Signature Cultural</p>
+                    </div>
+                    <p class="text-primary font-bold">₦2,800,000</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <section id="footer"></section>
+    <script src="js/custom.js"></script>
+   
+  
+</body>
+
+</html>
