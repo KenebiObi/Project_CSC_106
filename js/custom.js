@@ -145,3 +145,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   initGreeting();
   initBookingForm();
 });
+
+function countdownTimer() {
+  const eventdate = new Date("April 5, 2026 08:45:12")
+  const currentdate = new Date().getTime();
+  const timeleft = eventdate - currentdate;
+
+
+}
