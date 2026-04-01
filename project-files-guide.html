@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Wazobia Farkiyya project files, defense prep, source code guide">
+    <meta name="keywords" content="Wazobia Farkiyya project files, project guide, source code structure">
     <meta name="description"
-        content="Complete file-by-file guide to the Wazobia Farkiyya project for defense preparation.">
+        content="Updated file-by-file guide to the Wazobia Farkiyya project structure, pages, assets, and shared logic.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project File Guide | Wazobia Farkiyya</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
@@ -21,23 +21,23 @@
 
     <main class="flex-grow max-w-7xl mx-auto w-full px-6 py-14 md:py-20 space-y-10">
         <header class="space-y-4">
-            <p class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Defense Preparation</p>
+            <p class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Project Documentation</p>
             <h1 class="text-4xl md:text-6xl font-black tracking-tight">Complete Project File Guide</h1>
             <p class="text-slate-600 dark:text-slate-400 max-w-4xl leading-relaxed">
-                This page explains every file in this project so a teammate can quickly understand what each file does,
-                what content it contains, and where it is used.
+                This guide reflects the current project structure after the major page, content, and asset updates made
+                across the site.
             </p>
         </header>
 
         <section class="rounded-xl border border-primary/20 bg-white/50 dark:bg-zinc-900/40 p-6 md:p-8">
             <h2 class="text-2xl font-bold mb-4">Project Structure Summary</h2>
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-700 dark:text-slate-300">
-                <li><span class="font-semibold text-primary">Root HTML pages:</span> 6 files</li>
+                <li><span class="font-semibold text-primary">Root HTML pages:</span> 7 files</li>
                 <li><span class="font-semibold text-primary">Shared includes:</span> 2 files in <code>inc/</code></li>
                 <li><span class="font-semibold text-primary">JavaScript files:</span> 3 files in <code>js/</code></li>
                 <li><span class="font-semibold text-primary">CSS files:</span> 2 files in <code>css/</code></li>
-                <li><span class="font-semibold text-primary">Images:</span> 9 files in <code>img/</code></li>
-                <li><span class="font-semibold text-primary">Total files:</span> 22 tracked project files</li>
+                <li><span class="font-semibold text-primary">Image assets:</span> 27 files in <code>img/</code></li>
+                <li><span class="font-semibold text-primary">Tracked project files:</span> 44 files</li>
             </ul>
         </section>
 
@@ -46,92 +46,113 @@
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary" href="index.html">index.html</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Home page. Contains hero section, heritage
-                    section, collection preview cards, and CTA links to collections and inquiries. Uses local and
-                    external images plus dynamic greeting text.</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Home page. Contains the hero banner, greeting text, heritage story section, collection preview, and
+                    main entry points into the collections and contact pages.
+                </p>
             </article>
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
-                <h3 class="font-bold text-lg"><a class="hover:text-primary" href=" .html"> .html</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Collections page. Contains product grid cards
-                    with category metadata (<code>data-category</code>), filter buttons (All/Men/Women), and pricing.
-                    Works with <code>filterItems()</code> from <code>js/custom.js</code>.</p>
+                <h3 class="font-bold text-lg"><a class="hover:text-primary" href="collections.html">collections.html</a>
+                </h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Product showcase page. Displays a 9-item product grid split across Yoruba, Hausa, and Igbo
+                    categories, with filter buttons powered by <code>filterItems()</code> in <code>js/custom.js</code>.
+                </p>
             </article>
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary" href="board.html">board.html</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Board page. Displays trustees/members in two
-                    repeated card grids with hover overlays and role descriptions. Uses four local member photos.</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Board of Trustees page. Shows the current leadership team in multiple responsive card grids with
+                    hover overlays, role labels, and individual profile images.
+                </p>
             </article>
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary" href="events.html">events.html</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Events page. Contains a showcase hero with
-                    countdown placeholders and a list of upcoming events (Lagos, Abuja, Enugu), each with action
-                    buttons.</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Events page. Includes a hero section with live countdown placeholders, a VIP invitation call to
+                    action, and the 2026 showcase schedule for Lagos, Abuja, and Enugu.
+                </p>
             </article>
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
-                <h3 class="font-bold text-lg"><a class="hover:text-primary" href="inquiries.html">inquiries.html</a>
-                </h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Inquiries page. Includes booking form fields
-                    (name, email, service, date, message), validation message placeholders, and a hidden success state
-                    shown after valid submission.</p>
+                <h3 class="font-bold text-lg"><a class="hover:text-primary" href="contact.html">contact.html</a></h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Contact and appointments page. Contains the private consultation form, validation error states,
+                    success state, brand/location information, and booking-related messaging.
+                </p>
             </article>
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary"
                         href="dom-structure.html">dom-structure.html</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Documentation page that explains shared
-                    website DOM architecture and reusable components (header, footer, JS layer, styling layer).</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Documentation page that explains the shared DOM layout used across the site, including injected
+                    header/footer sections, scripts, and reusable structure.
+                </p>
+            </article>
+
+            <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
+                <h3 class="font-bold text-lg"><a class="hover:text-primary"
+                        href="project-files-guide.html">project-files-guide.html</a></h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    This documentation page. Summarizes the current purpose of each page, include, script, stylesheet,
+                    and image group in the project.
+                </p>
             </article>
         </section>
 
         <section class="space-y-5">
-            <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Shared Includes (<code>inc/
-                
-            </code>)</h2>
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Shared Includes (<code>inc/</code>)</h2>
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary" href="inc/header.html">inc/header.html</a>
                 </h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Global top navigation component. Includes
-                    links to all major pages, theme toggle button, and utility icons (search, shopping bag, mobile
-                    menu).</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Shared navigation header. Includes links to the main pages, documentation pages, a theme toggle
+                    button, and a mobile menu icon placeholder.
+                </p>
             </article>
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary" href="inc/footer.html">inc/footer.html</a>
                 </h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Global footer component. Contains animated
-                    marquee, brand summary, explore links, contact block, and bottom legal links. This file is injected
-                    into every page.</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Shared footer. Contains the animated event marquee, brand summary, explore links, contact details,
+                    and bottom legal links. It is loaded dynamically into every page.
+                </p>
             </article>
         </section>
 
         <section class="space-y-5">
             <h2 class="text-2xl md:text-3xl font-bold tracking-tight">JavaScript Files (<code>js/</code>)</h2>
 
-            <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40 space-y-1">
+            <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary" href="js/head.js">js/head.js</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400">Injects shared CSS links
-                    (<code>css/fonts.css</code> and <code>css/style.css</code>) into <code>&lt;head&gt;</code> after DOM
-                    load.</p>
-            </article>
-
-            <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40 space-y-1">
-                <h3 class="font-bold text-lg"><a class="hover:text-primary"
-                        href="js/tailwind-config.js">js/tailwind-config.js</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400">Defines Tailwind custom theme values: primary
-                    color, light/dark backgrounds, display font, and border-radius scale. Enables class-based dark mode.
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Injects the shared stylesheet links for <code>css/fonts.css</code> and
+                    <code>css/style.css</code> into the document head after page load.
                 </p>
             </article>
 
-            <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40 space-y-1">
+            <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
+                <h3 class="font-bold text-lg"><a class="hover:text-primary"
+                        href="js/tailwind-config.js">js/tailwind-config.js</a></h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Defines the shared Tailwind theme, including the project primary color, background colors, display
+                    font, radius scale, and class-based dark mode setup.
+                </p>
+            </article>
+
+            <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary" href="js/custom.js">js/custom.js</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400">Main behavior file. Loads header/footer includes,
-                    handles product filtering, sets time-of-day greeting, validates inquiry form and success state, and
-                    controls theme toggle with localStorage persistence.</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Main behavior file. Loads the header and footer includes, handles collection filtering, updates the
+                    home-page greeting, validates the booking form, manages the dark/light theme toggle, and runs the
+                    event countdown timer.
+                </p>
             </article>
         </section>
 
@@ -140,87 +161,75 @@
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary" href="css/fonts.css">css/fonts.css</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Imports Google fonts (Material Symbols and
-                    Manrope), sets base body font, and configures Material Symbols rendering properties.</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Imports the Material Symbols icon set and the Manrope font family, then applies the base type and
+                    icon rendering settings used throughout the project.
+                </p>
             </article>
 
             <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
                 <h3 class="font-bold text-lg"><a class="hover:text-primary" href="css/style.css">css/style.css</a></h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Defines global light/dark body fallback
-                    colors, brand-color helper, marquee keyframes/animation utility, and active filter button style.</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
+                    Holds the custom global styles that sit beside Tailwind utilities, including fallback body colors,
+                    the brand text color helper, marquee animation, and active collection filter state.
+                </p>
             </article>
         </section>
 
         <section class="space-y-5">
-            <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Image Files (<code>img/</code>)</h2>
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Image Assets (<code>img/</code>)</h2>
 
-            <div class="overflow-x-auto rounded-xl border border-primary/20 bg-white/60 dark:bg-zinc-900/40">
-                <table class="w-full text-left text-sm">
-                    <thead class="border-b border-primary/10 text-primary uppercase tracking-widest text-xs">
-                        <tr>
-                            <th class="p-4">File</th>
-                            <th class="p-4">Used In</th>
-                            <th class="p-4">Purpose</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-slate-700 dark:text-slate-300">
-                        <tr class="border-b border-primary/10">
-                            <td class="p-4"><a class="hover:text-primary" href="img/IMG_7870.jpeg">IMG_7870.jpeg</a>
-                            </td>
-                            <td class="p-4">index.html</td>
-                            <td class="p-4">Hausa-inspired heritage gallery photo.</td>
-                        </tr>
-                        <tr class="border-b border-primary/10">
-                            <td class="p-4"><a class="hover:text-primary" href="img/IMG_7871.jpeg">IMG_7871.jpeg</a>
-                            </td>
-                            <td class="p-4">index.html</td>
-                            <td class="p-4">Yoruba agbada gallery photo.</td>
-                        </tr>
-                        <tr class="border-b border-primary/10">
-                            <td class="p-4"><a class="hover:text-primary" href="img/IMG_7872.jpeg">IMG_7872.jpeg</a>
-                            </td>
-                            <td class="p-4">index.html</td>
-                            <td class="p-4">Yoruba collection preview card image.</td>
-                        </tr>
-                        <tr class="border-b border-primary/10">
-                            <td class="p-4"><a class="hover:text-primary" href="img/IMG_7873.jpeg">IMG_7873.jpeg</a>
-                            </td>
-                            <td class="p-4">index.html</td>
-                            <td class="p-4">Igbo ceremonial gallery photo.</td>
-                        </tr>
-                        <tr class="border-b border-primary/10">
-                            <td class="p-4"><a class="hover:text-primary" href="img/IMG_7879.jpeg">IMG_7879.jpeg</a>
-                            </td>
-                            <td class="p-4">index.html</td>
-                            <td class="p-4">Minority-tribe styled gallery photo.</td>
-                        </tr>
-                        <tr class="border-b border-primary/10">
-                            <td class="p-4"><a class="hover:text-primary" href="img/IMG_7845.jpeg">IMG_7845.jpeg</a>
-                            </td>
-                            <td class="p-4">board.html</td>
-                            <td class="p-4">Board member 1 photo (reused in second row).</td>
-                        </tr>
-                        <tr class="border-b border-primary/10">
-                            <td class="p-4"><a class="hover:text-primary" href="img/IMG_7855.jpeg">IMG_7855.jpeg</a>
-                            </td>
-                            <td class="p-4">board.html</td>
-                            <td class="p-4">Board member 2 photo (reused in second row).</td>
-                        </tr>
-                        <tr class="border-b border-primary/10">
-                            <td class="p-4"><a class="hover:text-primary" href="img/IMG_7905.jpeg">IMG_7905.jpeg</a>
-                            </td>
-                            <td class="p-4">board.html</td>
-                            <td class="p-4">Board member 3 photo (reused in second row).</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4"><a class="hover:text-primary" href="img/IMG_7907.jpeg">IMG_7907.jpeg</a>
-                            </td>
-                            <td class="p-4">board.html</td>
-                            <td class="p-4">Board member 4 photo (reused in second row).</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
+                    <h3 class="font-bold text-lg mb-3">Home Page Images</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                        <code>IMG_7870.jpeg</code>, <code>IMG_7871.jpeg</code>, <code>IMG_7872.jpeg</code>,
+                        <code>IMG_7873.jpeg</code>, and <code>IMG_7879.jpeg</code> support the heritage section and
+                        home-page collection preview.
+                    </p>
+                </article>
+
+                <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
+                    <h3 class="font-bold text-lg mb-3">Collections Images</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                        <code>Yoruba_1.jpeg</code> to <code>Yoruba_3.jpeg</code>, <code>Hausa_1.jpeg</code> to
+                        <code>Hausa_3.jpeg</code>, and <code>Igbo_1.jpeg</code> to <code>Igbo_3.jpeg</code> are used as
+                        the 9 product showcase assets on <code>collections.html</code>.
+                    </p>
+                </article>
+
+                <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
+                    <h3 class="font-bold text-lg mb-3">Board Member Images</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                        The board page currently uses <code>Kenebi_Obi.png</code>,
+                        <code>Elizabeth Koplom Daniel.jpg</code>, <code>Joshua Ekpe.jpg</code>,
+                        <code>Shalom Onwuka.jpg</code>, <code>kamsi felix.png</code>,
+                        <code>Isa Abubakar.jpeg</code>, <code>Ifeanyi Emmanuel.jpeg</code>,
+                        <code>David Olufemi.jpg</code>, and <code>Bolatito Olumegbon.jpg</code>.
+                    </p>
+                </article>
+
+                <article class="rounded-xl border border-primary/20 p-6 bg-white/60 dark:bg-zinc-900/40">
+                    <h3 class="font-bold text-lg mb-3">Legacy / Unused Board Assets</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                        <code>IMG_7845.jpeg</code>, <code>IMG_7855.jpeg</code>, <code>IMG_7905.jpeg</code>, and
+                        <code>IMG_7907.jpeg</code> remain in the project from the earlier board layout but are not part
+                        of the current board page markup.
+                    </p>
+                </article>
             </div>
+        </section>
+
+        <section class="rounded-xl border border-primary/20 bg-white/50 dark:bg-zinc-900/40 p-6 md:p-8 space-y-3">
+            <h2 class="text-2xl font-bold">Current Notes</h2>
+            <ul class="text-sm text-slate-700 dark:text-slate-300 space-y-2">
+                <li>The live contact page file is <code>contact.html</code>, even though some older copy still refers to
+                    inquiries or consultations.</li>
+                <li>The footer still links to <code>inquiries.html</code>, which no longer exists and should point to
+                    <code>contact.html</code> if that navigation is being cleaned up later.</li>
+                <li>The project includes a documentation pair: <code>dom-structure.html</code> for architecture and
+                    <code>project-files-guide.html</code> for file-by-file reference.</li>
+            </ul>
         </section>
     </main>
 
