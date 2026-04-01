@@ -138,6 +138,25 @@ function initThemeToggle() {
   });
 }
 
+function initMobileMenu() {
+  const menuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (!menuButton || !mobileMenu) return;
+
+  menuButton.addEventListener("click", () => {
+    const isOpen = !mobileMenu.classList.contains("hidden");
+    mobileMenu.classList.toggle("hidden", isOpen);
+    menuButton.setAttribute("aria-expanded", String(!isOpen));
+  });
+
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
 // Custom JavaScript for event countdown timer
 function initEventCountdown() {
   const daysEl = document.getElementById("days");
@@ -176,6 +195,7 @@ function initEventCountdown() {
 document.addEventListener("DOMContentLoaded", async () => {
   await Promise.all([loadHTML("header", "inc/header.html"), loadHTML("footer", "inc/footer.html")]);
 
+  initMobileMenu();
   initThemeToggle();
   initGreeting();
   initBookingForm();
