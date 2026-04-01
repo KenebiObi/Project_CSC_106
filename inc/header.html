@@ -27,9 +27,25 @@
                 aria-label="Toggle theme">
                 <span class="material-symbols-outlined">dark_mode</span>
             </button>
-            <button class="md:hidden">
+            <button id="mobile-menu-button" class="md:hidden flex items-center justify-center" type="button"
+                aria-label="Open mobile menu" aria-controls="mobile-menu" aria-expanded="false">
                 <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
     </div>
+    <nav id="mobile-menu"
+        class="hidden md:hidden mt-4 border-t border-primary/10 pt-4 max-w-7xl mx-auto flex flex-col gap-3">
+        <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors"
+            href="index.html">Home</a>
+        <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors"
+            href="collections.html">Collections</a>
+        <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors"
+            href="board.html">Board</a>
+        <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors"
+            href="events.html">Events</a>
+        <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors"
+            href="contact.html">Contacts</a>
+        <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors"
+            href="dom-structure.html">DOM</a>
+    </nav>
 </header>
